@@ -1,0 +1,304 @@
+@import './_variables';
+
+#contact {
+    width: 100%;
+    height: 100vh;
+    background: $White;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    h2 {
+        margin-bottom: 2rem;
+        text-align: center;
+    }
+
+    #text_contact {
+
+        .icons {
+            width: 35px;
+            height: 35px;
+            margin-right: .1rem;
+        }
+
+        .ico {
+            background-color: black;
+        }
+
+        h2 {
+            position: top;
+        }
+
+        h3 {
+            font-size: large;
+            font-weight: 700;
+        }
+
+        p {
+            font-size: small;
+            margin-bottom: 1.5rem;
+            font-weight: 500;
+        }
+
+        ul {
+            list-style: none;
+            font-size: x-small;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: flex-start;
+            align-items: center;
+            width: auto;
+            max-width: 300px;
+            margin-bottom: 0;
+            padding-left: 0;
+
+            li {
+                float: left;
+                display: flex;
+                flex-direction: row;
+                justify-content: flex-start;
+                align-items: center;
+                width: 150px;
+                height: 40px;
+                margin-bottom: 5px;
+
+                a {
+                    text-decoration: none;
+                    color: $Matte_black;
+                }
+
+                h4 {
+                    font-size: small;
+                    font-weight: 600;
+                    margin-bottom: 0px;
+                }
+
+                p {
+                    font-size: xx-small;
+                    margin-bottom: 0;
+                    font-weight: 500;
+                    color: $Matte_black;
+                }
+
+                #mail {
+                    width: 32px;
+                    margin-left: 1%;
+                }
+            }
+        }
+    }
+
+    #form_contact {
+        padding: 0 40px;
+
+        textarea {
+            max-height: 200px;
+            min-height: 200px;
+            height: 200px;
+            border-radius: 15px;
+        }
+
+        input {
+            text-align: center;
+            border-radius: 15px;
+        }
+
+        .button_submit {
+            display: flex;
+            justify-content: flex-end;
+
+            button {
+                border-radius: 15px;
+                margin-bottom: 1rem;
+                width: 120px;
+                color: $White;
+                background-color: $Black;
+            }
+        }
+    }
+
+    #footer {
+        text-align: center;
+        padding: 10px 0;
+        height: 20px;
+        width: 100vw;
+        font-size: xx-small;
+        color: $White;
+
+        p {
+            background-color: $Black;
+            margin: 0;
+        }
+    }
+
+
+    .path_container {
+        display: flex;
+        width: 100vw;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+    }
+
+    .path_container_top {
+        align-self: end;
+        display: flex;
+        flex-direction: column;
+        margin-top: 1rem;
+        width: 50vw;
+
+        .path_top_01 {
+            align-self: end;
+            width: 50vh;
+            height: 8vh;
+            background: #000;
+            animation-duration: 1.5s;
+            animation-timing-function: cubic-bezier(0, 1.5, 1, -10vw);
+            clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 20% 100%);
+        }
+
+        .path_top_02 {
+            align-self: end;
+            width: 50vh;
+            height: 8vh;
+            margin-top: 10px;
+            background: #000;
+            animation-duration: 1s;
+            animation-timing-function: cubic-bezier(0, 1.5, 1, -10vw);
+            clip-path: polygon(40% 0%, 100% 0%, 100% 100%, 60% 100%);
+        }
+    }
+
+    .path_container_bottom {
+        margin-top: 1rem;
+        width: 50vw;
+
+        .path_bottom_01 {
+            width: 50vh;
+            height: 8vh;
+            background: #000;
+            animation-duration: 1s;
+            animation-timing-function: cubic-bezier(0, 1.5, 1, -10vw);
+            clip-path: polygon(0% 0%, 100% 0%, 80% 100%, 0% 100%);
+        }
+
+        .path_bottom_02 {
+            width: 50vh;
+            height: 8vh;
+            margin-top: 10px;
+            background: #000;
+            animation-duration: 1.5s;
+            animation-timing-function: cubic-bezier(0, 1.5, 1, -10vw);
+            clip-path: polygon(0% 0%, 60% 0%, 40% 100%, 0% 100%);
+        }
+
+    }
+
+    .path.animate_bottom {
+        animation-name: path_bottom;
+    }
+
+    .path.animate_top {
+        animation-name: path_top;
+    }
+}
+
+
+/* keyframes */
+@keyframes path_bottom {
+    from {
+        transform: translateX(-35vw);
+    }
+
+    to {
+        transform: translateX(0vw);
+    }
+}
+
+@keyframes path_top {
+    from {
+        transform: translateX(35vw);
+    }
+
+    to {
+        transform: translateX(0vw);
+    }
+}
+
+
+/* Media Query */
+@media (max-width: 990px) {
+    #form_contact {
+        padding: 0 !important;
+    }
+}
+
+@media (max-width: 880px) {
+
+    .path_top_02,
+    .path_top_01,
+    .path_bottom_01,
+    .path_bottom_02 {
+        width: 40vh !important;
+    }
+}
+
+@media (max-width: 700px) {
+
+    .path_top_02,
+    .path_top_01,
+    .path_bottom_01,
+    .path_bottom_02 {
+        width: 30vh !important;
+    }
+}
+
+@media (max-width: 580px) {
+
+    .path_top_02,
+    .path_top_01,
+    .path_bottom_01,
+    .path_bottom_02 {
+        width: 25vh !important;
+    }
+}
+
+@media (max-width: 600px) {
+    #contact {
+        h2 {
+            margin-top: 3rem;
+        }
+
+        .path_container {
+            display: none;
+        }
+    }
+
+    .d-flex {
+        flex-direction: column;
+    }
+
+    #text_contact {
+        margin-bottom: 3rem;
+        display: flex;
+        flex-direction: column;
+
+        ul {
+            width: 100% !important;
+            max-width: none !important;
+            justify-content: space-around;
+            align-self: center;
+
+            li {
+                width: 170px !important;
+            }
+        }
+    }
+}
+
+@media (max-width: 400px) {
+    #text_contact ul li {
+        width: 140px !important;
+    }
+}

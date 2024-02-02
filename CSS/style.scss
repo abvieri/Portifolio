@@ -1,0 +1,55 @@
+@import './variables';
+@import './header';
+@import './banner';
+@import './about';
+@import './projects';
+@import './contact';
+@import './lateral-menu';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+::-webkit-scrollbar {
+    display: none;
+    scroll-behavior: smooth;
+}
+
+.icons {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+
+h2 {
+    margin-bottom: 50px;
+    font-size: xx-large !important;
+    font-weight: 600 !important;
+}
+
+
+/* Animação Scroll */
+
+.js .anime {
+    opacity: 0;
+    transform: translate3D(0px, -10px, 0px);
+}
+
+.js .anime-init {
+    opacity: 1;
+    transform: translate3D(0px, 0px, 0px);
+    transition: 1s all ease;
+}
+
+
+/* Media Query */
+
+@media (max-width: 991px) {
+    #menu {
+        display: none;
+    }
+}
+
