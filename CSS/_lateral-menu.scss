@@ -1,0 +1,55 @@
+@import './variables';
+
+#menu {
+    width: 3em;
+    height: 18em;
+    border-radius: 20px;
+    position: fixed;
+    z-index: 3;
+    right: 2vw;
+    top: calc((100vh - 280px)/2);
+    margin-top: -2.5em;
+    background-color: $White;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+    @include flex_center(column);
+
+    ul {
+        list-style: none;
+        width: 100%;
+        height: 100%;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+
+        li{
+            background: $White;
+            border-radius: 100%;
+            width: 40px;
+            height: 40px;
+            transition: .5s;
+            @include flex_center(column);
+        }
+
+        a {
+            text-decoration: none;
+
+            svg {
+                transition: fill .5s;
+            }
+        }
+
+        .selected {
+            background: $Black;
+
+            svg {
+                transition: fill .5s;
+                fill: $Black;
+            }
+        }
+
+    }
+
+}
