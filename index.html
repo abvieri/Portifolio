@@ -813,14 +813,16 @@
                 </div>
                 <div class="col-md-7" id="form_contact">
                     <form name="contact" method="POST" data-netlify="true" class="row g-3">
-                        <input type="hidden" name="subject" value="Novo email de %{formName} (%{submissionId})" />
-
                         <div class="col-md-6">
                             <input type="text" class="form-control" id="inputName" placeholder="Nome" name="name">
                         </div>
 
                         <div class="col-md-6">
                             <input type="email" class="form-control" id="inputEmail" placeholder="Email" name="email">
+                        </div>
+
+                        <div class="col-md-12">
+                            <input type="text" name="subject"/>
                         </div>
 
                         <div class="col-12">
