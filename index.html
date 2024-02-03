@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/CSS/style.css">
     <title>Portifolio</title>
+    <link rel="icon" type="image/x-icon" href="./img/favicon.svg">
     <!-- Google Fonts Poppins-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -169,7 +170,7 @@
             <div class="card mb-3 about_card box anime" id="animated_box">
                 <div class="row g-0">
                     <div class="col-md-4">
-                        <img src="img/perfil.jpg" class="img-fluid rounded-start" alt="foto de perfil">
+                        <img src="img/do-utilizador.png" class="img-fluid rounded-start" alt="foto de perfil" style="padding: 50px;">
                     </div>
                     <div class="col-md-8">
                         <div class="card-body">
@@ -500,210 +501,128 @@
         <section id="projects" class="main_section">
             <h2 class="box anime" id="animated_projects">PRINCIPAIS PROJETOS</h2>
 
-                <div id="carousel_projects" class="carousel carousel-fade" data-bs-ride="true">
+            <div id="carousel_projects" class="carousel slide" data-bs-ride="true">
 
-                    <div class="carousel-indicators">
-                        <button type="button" data-bs-target="#carousel_projects" data-bs-slide-to="0" class="active"
-                            aria-current="true" aria-label="Slide 1" name="btn_carousel"></button>
-                        <button type="button" data-bs-target="#carousel_projects" data-bs-slide-to="1"
-                            aria-label="Slide 2" name="btn_carousel"></button>
-                        <button type="button" data-bs-target="#carousel_projects" data-bs-slide-to="2"
-                            aria-label="Slide 3" name="btn_carousel"></button>
-                    </div>
-
-                    <div class="carousel-inner">
-                        <div class="carousel-item crl value_01 active">
-                            <img src="img/bibliotec_banner.png" class="d-block w-100" alt="bibliotec_banner">
-                        </div>
-                        <div class="carousel-item crl value_02">
-                            <img src="img/primor_banner.jpg" class="d-block w-100" alt="primor_banner">
-                        </div>
-                        <div class="carousel-item crl value_03">
-                            <img src="img/primor_banner.jpg" class="d-block w-100" alt="portifolio_banner">
-                        </div>
-                    </div>
-
-                    <button class="carousel-control-prev" type="button" data-bs-target="#carousel_projects"
-                        data-bs-slide="prev" name="btn_carousel">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Previous</span>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#carousel_projects"
-                        data-bs-slide="next" name="btn_carousel">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Next</span>
-                    </button>
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carousel_projects" data-bs-slide-to="0" class="active"
+                        aria-current="true" aria-label="Slide 1" name="btn_carousel"></button>
+                    <button type="button" data-bs-target="#carousel_projects" data-bs-slide-to="1" aria-label="Slide 2"
+                        name="btn_carousel"></button>
+                    <!-- Adicione o botão do próximo slide -->
                 </div>
 
-
-                <div class="information slide_active box anime" id="slide01">
-                    <img src="img/bibliotec_banner.png" class="hidden_window" alt="bibliotec_banner">
-                    <div class="d-flex flex-column">
-                        <h3>Projeto Bibliotec</h3>
-                        <p>Uma solução que integra bibliotecas físicas e digitais de maneira automatizada. Dentre os
-                            recursos
-                            temos a leitura online, reserva de livros, a capacidade de categorizar e avaliar obras, além
-                            de
-                            outras funcionalidades proporcionando aos usuários uma abordagem moderna e eficiente.</p>
-                        <ul>
-                            <li>HTML</li>
-                            <li>CSS</li>
-                            <li>JS</li>
-                            <li>Bootstrap</li>
-                        </ul>
-                        <div class="links_information">
-                            <a href="#">
-                                <svg class="icons" fill="#000000" viewBox="-3.2 -3.2 38.40 38.40"
-                                    xmlns="http://www.w3.org/2000/svg" stroke="#000000">
-                                    <g id="SVGRepo_bgCarrier" stroke-width="0" transform="translate(0,0), scale(1)">
-                                        <rect x="-3.2" y="-3.2" width="38.40" height="38.40" rx="3.84" fill="#ffffff"
-                                            strokewidth="0"></rect>
-                                    </g>
-                                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"
-                                        stroke="#CCCCCC" stroke-width="0.128"></g>
-                                    <g id="SVGRepo_iconCarrier">
-
-                                        <path
-                                            d="M16 0.396c-8.839 0-16 7.167-16 16 0 7.073 4.584 13.068 10.937 15.183 0.803 0.151 1.093-0.344 1.093-0.772 0-0.38-0.009-1.385-0.015-2.719-4.453 0.964-5.391-2.151-5.391-2.151-0.729-1.844-1.781-2.339-1.781-2.339-1.448-0.989 0.115-0.968 0.115-0.968 1.604 0.109 2.448 1.645 2.448 1.645 1.427 2.448 3.744 1.74 4.661 1.328 0.14-1.031 0.557-1.74 1.011-2.135-3.552-0.401-7.287-1.776-7.287-7.907 0-1.751 0.62-3.177 1.645-4.297-0.177-0.401-0.719-2.031 0.141-4.235 0 0 1.339-0.427 4.4 1.641 1.281-0.355 2.641-0.532 4-0.541 1.36 0.009 2.719 0.187 4 0.541 3.043-2.068 4.381-1.641 4.381-1.641 0.859 2.204 0.317 3.833 0.161 4.235 1.015 1.12 1.635 2.547 1.635 4.297 0 6.145-3.74 7.5-7.296 7.891 0.556 0.479 1.077 1.464 1.077 2.959 0 2.14-0.020 3.864-0.020 4.385 0 0.416 0.28 0.916 1.104 0.755 6.4-2.093 10.979-8.093 10.979-15.156 0-8.833-7.161-16-16-16z">
-                                        </path>
-                                    </g>
-                                </svg>
-                                <p>ver projeto ></p>
-                            </a>
-
-                            <div id="space"></div>
-
-                            <a href="#">
-                                <svg id="link_icon" class="icons" viewBox="0 0 24 24" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-                                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
-                                    <g id="SVGRepo_iconCarrier">
-                                        <path
-                                            d="M14 12C14 14.7614 11.7614 17 9 17H7C4.23858 17 2 14.7614 2 12C2 9.23858 4.23858 7 7 7H7.5M10 12C10 9.23858 12.2386 7 15 7H17C19.7614 7 22 9.23858 22 12C22 14.7614 19.7614 17 17 17H16.5"
-                                            stroke="#000000" stroke-width="2" stroke-linecap="round"></path>
-                                    </g>
-                                </svg>
-                                <p>ver página ></p>
-                            </a>
-                        </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item crl value_01 active">
+                        <img src="img/bibliotec_banner.png" class="d-block w-100" alt="bibliotec_banner">
                     </div>
+                    <div class="carousel-item crl value_02">
+                        <img src="img/primor_banner.jpg" class="d-block w-100" alt="primor_banner">
+                    </div>
+                    <!-- Adicione a imagem do próximo slide -->
                 </div>
 
-                <div class="information box anime" id="slide02">
-                    <img src="img/primor_banner.jpg" class="hidden_window" alt="primor_banner">
-                    <div class="d-flex flex-column">
+                <button class="carousel-control-prev" type="button" data-bs-target="#carousel_projects"
+                    data-bs-slide="prev" name="btn_carousel">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carousel_projects"
+                    data-bs-slide="next" name="btn_carousel">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
 
-                        <h3>Loja Primor</h3>
-                        <p>A Primor é uma loja online especializada em moda feminina, com foco nos EUA. Criada na
-                            plataforma
-                            Shopify, e CSS personalizado. Oferece todas as funcionalidades de e-commerce, como adicionar
-                            ao
-                            carrinho, favoritar e de compra rápida integrada às plataformas Stripe e PayPal.</p>
-                        <ul>
-                            <li>Shopify</li>
-                            <li>CSS</li>
-                            <li>SEO</li>
-                        </ul>
-                        <div class="links_information">
-                            <a href="#">
-                                <svg class="icons" fill="#000000" viewBox="-3.2 -3.2 38.40 38.40"
-                                    xmlns="http://www.w3.org/2000/svg" stroke="#000000">
-                                    <g id="SVGRepo_bgCarrier" stroke-width="0" transform="translate(0,0), scale(1)">
-                                        <rect x="-3.2" y="-3.2" width="38.40" height="38.40" rx="3.84" fill="#ffffff"
-                                            strokewidth="0"></rect>
-                                    </g>
-                                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"
-                                        stroke="#CCCCCC" stroke-width="0.128"></g>
-                                    <g id="SVGRepo_iconCarrier">
 
-                                        <path
-                                            d="M16 0.396c-8.839 0-16 7.167-16 16 0 7.073 4.584 13.068 10.937 15.183 0.803 0.151 1.093-0.344 1.093-0.772 0-0.38-0.009-1.385-0.015-2.719-4.453 0.964-5.391-2.151-5.391-2.151-0.729-1.844-1.781-2.339-1.781-2.339-1.448-0.989 0.115-0.968 0.115-0.968 1.604 0.109 2.448 1.645 2.448 1.645 1.427 2.448 3.744 1.74 4.661 1.328 0.14-1.031 0.557-1.74 1.011-2.135-3.552-0.401-7.287-1.776-7.287-7.907 0-1.751 0.62-3.177 1.645-4.297-0.177-0.401-0.719-2.031 0.141-4.235 0 0 1.339-0.427 4.4 1.641 1.281-0.355 2.641-0.532 4-0.541 1.36 0.009 2.719 0.187 4 0.541 3.043-2.068 4.381-1.641 4.381-1.641 0.859 2.204 0.317 3.833 0.161 4.235 1.015 1.12 1.635 2.547 1.635 4.297 0 6.145-3.74 7.5-7.296 7.891 0.556 0.479 1.077 1.464 1.077 2.959 0 2.14-0.020 3.864-0.020 4.385 0 0.416 0.28 0.916 1.104 0.755 6.4-2.093 10.979-8.093 10.979-15.156 0-8.833-7.161-16-16-16z">
-                                        </path>
-                                    </g>
-                                </svg>
-                                <p>ver projeto ></p>
-                            </a>
+            <div class="information slide_active box anime" id="slide01">
+                <img src="img/bibliotec_banner.png" class="hidden_window" alt="bibliotec_banner">
+                <div class="d-flex flex-column">
+                    <h3>Projeto Bibliotec</h3>
+                    <p>Uma solução que integra bibliotecas físicas e digitais de maneira automatizada. Dentre os
+                        recursos
+                        temos a leitura online, reserva de livros, a capacidade de categorizar e avaliar obras, além
+                        de
+                        outras funcionalidades proporcionando aos usuários uma abordagem moderna e eficiente.</p>
+                    <ul>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>JS</li>
+                        <li>Bootstrap</li>
+                    </ul>
+                    <div class="links_information">
+                        <a href="https://github.com/abvieri/Bibliotec" target="_blank">
+                            <svg class="icons" fill="#000000" viewBox="-3.2 -3.2 38.40 38.40"
+                                xmlns="http://www.w3.org/2000/svg" stroke="#000000">
+                                <g id="SVGRepo_bgCarrier" stroke-width="0" transform="translate(0,0), scale(1)">
+                                    <rect x="-3.2" y="-3.2" width="38.40" height="38.40" rx="3.84" fill="#ffffff"
+                                        strokewidth="0"></rect>
+                                </g>
+                                <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke="#CCCCCC" stroke-width="0.128"></g>
+                                <g id="SVGRepo_iconCarrier">
 
-                            <div id="space"></div>
+                                    <path
+                                        d="M16 0.396c-8.839 0-16 7.167-16 16 0 7.073 4.584 13.068 10.937 15.183 0.803 0.151 1.093-0.344 1.093-0.772 0-0.38-0.009-1.385-0.015-2.719-4.453 0.964-5.391-2.151-5.391-2.151-0.729-1.844-1.781-2.339-1.781-2.339-1.448-0.989 0.115-0.968 0.115-0.968 1.604 0.109 2.448 1.645 2.448 1.645 1.427 2.448 3.744 1.74 4.661 1.328 0.14-1.031 0.557-1.74 1.011-2.135-3.552-0.401-7.287-1.776-7.287-7.907 0-1.751 0.62-3.177 1.645-4.297-0.177-0.401-0.719-2.031 0.141-4.235 0 0 1.339-0.427 4.4 1.641 1.281-0.355 2.641-0.532 4-0.541 1.36 0.009 2.719 0.187 4 0.541 3.043-2.068 4.381-1.641 4.381-1.641 0.859 2.204 0.317 3.833 0.161 4.235 1.015 1.12 1.635 2.547 1.635 4.297 0 6.145-3.74 7.5-7.296 7.891 0.556 0.479 1.077 1.464 1.077 2.959 0 2.14-0.020 3.864-0.020 4.385 0 0.416 0.28 0.916 1.104 0.755 6.4-2.093 10.979-8.093 10.979-15.156 0-8.833-7.161-16-16-16z">
+                                    </path>
+                                </g>
+                            </svg>
+                            <p>ver projeto ></p>
+                        </a>
 
-                            <a href="#">
-                                <svg id="link_icon" class="icons" viewBox="0 0 24 24" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-                                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
-                                    <g id="SVGRepo_iconCarrier">
-                                        <path
-                                            d="M14 12C14 14.7614 11.7614 17 9 17H7C4.23858 17 2 14.7614 2 12C2 9.23858 4.23858 7 7 7H7.5M10 12C10 9.23858 12.2386 7 15 7H17C19.7614 7 22 9.23858 22 12C22 14.7614 19.7614 17 17 17H16.5"
-                                            stroke="#000000" stroke-width="2" stroke-linecap="round"></path>
-                                    </g>
-                                </svg>
-                                <p>ver página ></p>
-                            </a>
-                        </div>
+                        <div id="space"></div>
 
+                        <a href="https://abvieri-bibliotec.netlify.app" target="_blank">
+                            <svg id="link_icon" class="icons" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                                <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                                <g id="SVGRepo_iconCarrier">
+                                    <path
+                                        d="M14 12C14 14.7614 11.7614 17 9 17H7C4.23858 17 2 14.7614 2 12C2 9.23858 4.23858 7 7 7H7.5M10 12C10 9.23858 12.2386 7 15 7H17C19.7614 7 22 9.23858 22 12C22 14.7614 19.7614 17 17 17H16.5"
+                                        stroke="#000000" stroke-width="2" stroke-linecap="round"></path>
+                                </g>
+                            </svg>
+                            <p>ver página ></p>
+                        </a>
                     </div>
                 </div>
+            </div>
 
-                <div class="information box anime" id="slide03">
-                    <img src="img/primor_banner.jpg" class="hidden_window" alt="portifolio_banner">
-                    <div class="d-flex flex-column">
+            <div class="information box anime" id="slide02">
+                <img src="img/primor_banner.jpg" class="hidden_window" alt="primor_banner">
+                <div class="d-flex flex-column">
 
-                        <h3>Meu Portifólio</h3>
-                        <p>Meu portfólio é o resultado da harmonia entre HTML, CSS, JavaScript, Bootstrap e Sass. Cada
-                            tecnologia
-                            contribui para uma experiência digital única, refletindo meu compromisso com qualidade e
-                            inovação.
-                            Explore para descobrir como essas ferramentas se unem para criar uma presença online
-                            distintiva.
-                        </p>
-                        <ul>
-                            <li>HTML</li>
-                            <li>CSS</li>
-                            <li>JS</li>
-                            <li>SASS</li>
-                            <li>Bootstrap</li>
-                        </ul>
-                        <div class="links_information">
-                            <a href="#">
-                                <svg class="icons" fill="#000000" viewBox="-3.2 -3.2 38.40 38.40"
-                                    xmlns="http://www.w3.org/2000/svg" stroke="#000000">
-                                    <g id="SVGRepo_bgCarrier" stroke-width="0" transform="translate(0,0), scale(1)">
-                                        <rect x="-3.2" y="-3.2" width="38.40" height="38.40" rx="3.84" fill="#ffffff"
-                                            strokewidth="0"></rect>
-                                    </g>
-                                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"
-                                        stroke="#CCCCCC" stroke-width="0.128"></g>
-                                    <g id="SVGRepo_iconCarrier">
-
-                                        <path
-                                            d="M16 0.396c-8.839 0-16 7.167-16 16 0 7.073 4.584 13.068 10.937 15.183 0.803 0.151 1.093-0.344 1.093-0.772 0-0.38-0.009-1.385-0.015-2.719-4.453 0.964-5.391-2.151-5.391-2.151-0.729-1.844-1.781-2.339-1.781-2.339-1.448-0.989 0.115-0.968 0.115-0.968 1.604 0.109 2.448 1.645 2.448 1.645 1.427 2.448 3.744 1.74 4.661 1.328 0.14-1.031 0.557-1.74 1.011-2.135-3.552-0.401-7.287-1.776-7.287-7.907 0-1.751 0.62-3.177 1.645-4.297-0.177-0.401-0.719-2.031 0.141-4.235 0 0 1.339-0.427 4.4 1.641 1.281-0.355 2.641-0.532 4-0.541 1.36 0.009 2.719 0.187 4 0.541 3.043-2.068 4.381-1.641 4.381-1.641 0.859 2.204 0.317 3.833 0.161 4.235 1.015 1.12 1.635 2.547 1.635 4.297 0 6.145-3.74 7.5-7.296 7.891 0.556 0.479 1.077 1.464 1.077 2.959 0 2.14-0.020 3.864-0.020 4.385 0 0.416 0.28 0.916 1.104 0.755 6.4-2.093 10.979-8.093 10.979-15.156 0-8.833-7.161-16-16-16z">
-                                        </path>
-                                    </g>
-                                </svg>
-                                <p>ver projeto ></p>
-                            </a>
-
-                            <div id="space"></div>
-
-                            <a href="#">
-                                <svg id="link_icon" class="icons" viewBox="0 0 24 24" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-                                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
-                                    <g id="SVGRepo_iconCarrier">
-                                        <path
-                                            d="M14 12C14 14.7614 11.7614 17 9 17H7C4.23858 17 2 14.7614 2 12C2 9.23858 4.23858 7 7 7H7.5M10 12C10 9.23858 12.2386 7 15 7H17C19.7614 7 22 9.23858 22 12C22 14.7614 19.7614 17 17 17H16.5"
-                                            stroke="#000000" stroke-width="2" stroke-linecap="round"></path>
-                                    </g>
-                                </svg>
-                                <p>ver página ></p>
-                            </a>
-                        </div>
+                    <h3>Loja Primor</h3>
+                    <p>A Primor é uma loja online especializada em moda feminina, com foco nos EUA. Criada na
+                        plataforma
+                        Shopify, e CSS personalizado. Oferece todas as funcionalidades de e-commerce, como adicionar
+                        ao
+                        carrinho, favoritar e de compra rápida integrada às plataformas Stripe e PayPal.</p>
+                    <ul>
+                        <li>Shopify</li>
+                        <li>CSS</li>
+                        <li>SEO</li>
+                    </ul>
+                    <div class="links_information">
+                        <a href="#" target="_blank">
+                            <svg id="link_icon" class="icons" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                                <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                                <g id="SVGRepo_iconCarrier">
+                                    <path
+                                        d="M14 12C14 14.7614 11.7614 17 9 17H7C4.23858 17 2 14.7614 2 12C2 9.23858 4.23858 7 7 7H7.5M10 12C10 9.23858 12.2386 7 15 7H17C19.7614 7 22 9.23858 22 12C22 14.7614 19.7614 17 17 17H16.5"
+                                        stroke="#000000" stroke-width="2" stroke-linecap="round"></path>
+                                </g>
+                            </svg>
+                            <p>ver página ></p>
+                        </a>
                     </div>
 
                 </div>
+            </div>
 
+            <!-- Adicione as informações do próximo slide -->
         </section>
 
         <!-- Contato -->
